@@ -97,6 +97,15 @@ public class Order implements Serializable {
 	public Set<Product> getProducts() {
 		return products;
 	}
+	
+	public Double getTotal() {
+		Double total = 0.0;
+		for (Product product : products) {
+			total += product.getPrice();
+		}
+		
+		return total;
+	}
 
 	@Override
 	public int hashCode() {

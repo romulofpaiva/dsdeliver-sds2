@@ -11,14 +11,14 @@ export default function App() {
     OpenSans_700Bold
   });
 
-  if( !fontsLoaded ) {
+  if (!fontsLoaded) {
     return <AppLoading />
   }
 
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Routes/>
+      <Routes />
     </View>
   );
 }
